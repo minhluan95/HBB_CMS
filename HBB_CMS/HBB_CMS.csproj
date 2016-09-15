@@ -49,6 +49,10 @@
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data.Entity, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data.Entity.EF6, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System.Net.Http" />
@@ -1061,6 +1065,13 @@
     <Content Include="Content\css2\fonts\franchise-bold-webfont.eot" />
     <Content Include="Content\css2\fonts\franchise-bold-webfont.ttf" />
     <Content Include="Content\css2\fonts\franchise-bold-webfont.woff" />
+    <Content Include="Areas\Admin\Views\_viewstart.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\ALLPOST.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\CATEGORIES.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\TAGS.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\SidebarPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\Post\ADDNEW.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="ReleaseNotes.txt" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -1083,6 +1094,7 @@
     <Compile Include="Areas\Admin\Common\IdentityUser.cs" />
     <Compile Include="Areas\Admin\Common\SystemConsts.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PostController.cs" />
     <Compile Include="Areas\Admin\Infrastructure\HbbDbContext.cs" />
     <Compile Include="Areas\Admin\Infrastructure\Repository.cs" />
     <Compile Include="Areas\Admin\Infrastructure\UnitOfWork.cs" />
