@@ -10,10 +10,6 @@ namespace HBB_CMS.Areas.Admin.Controllers
     {
         //
         // GET: /Admin/Post/
-        public ActionResult Index()
-        {
-            return View();
-        }
         public ActionResult AllPost()
         {
             return View();
@@ -30,9 +26,9 @@ namespace HBB_CMS.Areas.Admin.Controllers
         {
             return View();
         }
-        public ActionResult SidebarPartial() 
+        public ActionResult SidebarPartial()
         {
             return PartialView();
         }
-	}
+    }
 }

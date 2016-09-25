@@ -1,0 +1,106 @@
+﻿<h1>Add New Page</h1>
+<div class="row">
+    <div class="col-md-8 col-xs-12">
+        <input type="text" class="form-control" id="txtText" placeholder="Enter title here"><br />
+        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-music"> Add Media</span></button><br>
+        <br />
+        <div id="editor">
+            <textarea></textarea>
+        </div>
+    </div>
+    <div class="col-md-4 col-xs-12">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Publish</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <button class="btn btn-default">Save Draft</button>
+                    </div>
+                    <div class="col-xs-4">
+
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="btn btn-default btn-right">Preview</button>
+                    </div>
+                </div><br />
+                <ul>
+                    <li><span><i class="glyphicon glyphicon-heart" aria-hidden="true"></i> Status: Draft</span></li>
+                    <li><span><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i> Visibility: Publish</li>
+                    <li><span><i class="fa fa-calendar" aria-hidden="true"></i> Publish immediately</span></li>
+                </ul>
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-default btn-primary">Publish</button>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Page Attributes</div>
+            <div class="panel-body">
+                <div class="row">
+                    <p class="pageattribute">Parent</p>
+                    <div class="carousel-search hidden-sm">
+                        <div class="btn-group">
+                            <a class="btn btn-default dropdown-toggle btn-select" data-toggle="dropdown" href="#">Select a Country <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">United States</a></li>
+                                <li><a href="#">Canada</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-star"></span> Other</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="pageattribute">Order</p>
+                    <div class="row textbox">
+                        <div class="col-md-4 col-xs-4">
+                            <input class="form-control" id="inputdefault" type="text">
+                        </div>
+                        <div class="col-md-8">
+
+                        </div>
+                    </div>
+                    <p class="pageattribute">Need help? Use the Help tab above the screen title.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Featured Image</div>
+            <div class="panel-body">
+                <h6>Set featured image</h6>
+            </div>
+        </div>
+    </div>
+</div>
+<script>tinymce.init({ selector: 'textarea' });</script>
+<style type="text/css">
+    ul {
+        list-style: none;
+        margin-left: 0px;
+    }
+
+    .btn-primary {
+        margin-left: 220px;
+    }
+
+    h6 {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    tag {
+        line-height: 7;
+    }
+
+    .hidden-sm {
+        padding-left: 25px;
+    }
+
+    .textbox {
+        padding-left: 25px;
+    }
+
+    .pageattribute {
+        padding-left: 25px;
+    }
+</style>

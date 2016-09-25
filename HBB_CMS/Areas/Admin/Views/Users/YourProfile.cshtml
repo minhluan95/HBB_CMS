@@ -1,0 +1,138 @@
+﻿@{
+    ViewBag.Title = "YourProfile";
+    Layout = "~/Areas/Admin/Views/AdminLayout.cshtml";
+}
+<div class="container box">
+    <div class="box-header with-border">
+        <h1 class="box-title"><strong>Your Profile</strong></h1>
+        <h5>Personal Options</h5>
+    </div>
+    <form class="form-horizontal">
+        <div class="box-body">
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 pull-left">Visual Editor</label>
+                <div class="col-sm-9">
+                    <input type="checkbox"> Disable the viusal editor when writing.
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 pull-left">Admin color schema</label>
+                <div class="col-sm-9 ">
+                    <div class="form-group">
+                        <div class="input-group my-colorpicker2">
+                            <input type="text" class="form-control">
+                            <div class="input-group-addon">
+                                <i></i>
+                            </div>
+                        </div>
+                        <!-- /.input group -->
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 pull-left">Keyboard Shortcut</label>
+                <div class="col-sm-9">
+                    <input type="checkbox"> Enable keyboard shortcut for comment moderation. <a href="#">More Information</a>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 pull-left">Toolbar</label>
+                <div class="col-sm-9">
+                    <input type="checkbox"> Show toolbar when viewing site.
+                </div>
+            </div>
+            <h4><strong>Name</strong></h4>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 pull-left">Username</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 pull-left">First Name</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 pull-left">Last Name</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 pull-left">Nick Name</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="Nick name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 pull-left">Display name publicy as</label>
+                <div class="col-sm-9">
+                    <select class="form-control">
+                        <option>Subcriber</option>
+                        <option>Subcriber</option>
+                        <option>Subcriber</option>
+                        <option>Subcriber</option>
+                        <option>Subcriber</option>
+                    </select>
+                </div>
+            </div>
+            <h4><strong>Contact info</strong></h4>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 pull-left">Email<em>(required)</em></label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 pull-left">Website</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="Website">
+                </div>
+            </div>
+            <h4><strong>About Yourself</strong></h4>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 pull-left">Biographical info</label>
+                <div class="col-sm-9">
+                    <textarea class="form-control"></textarea>
+                    <p><em>asdgasfhsghsfgjfhjdfhjfhj</em></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 pull-left">Your picture</label>
+                <div class="col-sm-9">
+                    <img src="~/Areas/Admin/Content/dist/img/avatar.png" class="img-responsive" />
+                    <p><em>You can change your profile picture</em></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-3 pull-left">Password<em>(required)</em></label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 pull-left">Repeat Password<em>(required)</em></label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-3 pull-left"></label>
+                <div class="col-sm-9">
+                    <button class="btn btn-default">Strength Indicator</button>
+                </div>
+            </div>
+        </div>
+        <div class="box-footer">
+            <button type="submit" class="btn btn-primary ">Add New User</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+
